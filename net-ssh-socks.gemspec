@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'net/ssh/socks'
 
 Gem::Specification.new do |s|
-  s.name        = "kerryb-net-ssh-socks"
+  s.name        = "net-ssh-socks"
   s.version     = Net::SSH::Socks::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Mike Enriquez"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "net-ssh-socks"
 
-  s.add_dependency "net-ssh", "~> 2.0"
+  s.add_dependency "net-ssh"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
